@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Tutor - ClassroomTutors</title>
+    <meta name="description" content="Join our network of qualified tutors and start earning by helping students achieve their academic goals.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="Logo.jpg" alt="ClassroomTutors Logo" style="width: 40px; height: 40px; border-radius: 20%;">
+                    </div>
+                    <span class="logo-text">ClassroomTutors</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="tutor-signup.html" class="nav-link active">Become a Tutor</a>
+                    <a href="student-booking.html" class="nav-btn">Book a Tutor</a>
+                    <a href="contact.html" class="nav-link">Contact & FAQ</a>
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Become a Tutor</h1>
+                <p class="hero-subtitle">Share your knowledge and gain tutoring hours for college applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign-up Form -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #171717;">Create Your Tutor Profile</h2>
+                
+                <form action="#" method="POST">
+                    <!-- Personal Information -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1rem; color: #171717; border-bottom: 2px solid hsl(217, 91%, 60%); padding-bottom: 0.5rem;">Personal Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+
+                    <!-- Teaching Information -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1rem; color: #171717; border-bottom: 2px solid hsl(217, 91%, 60%); padding-bottom: 0.5rem;">Teaching Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="subjects">Subjects You Can Teach* <i>(max. 3)</i></label>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="math" name="subjects" value="Mathematics">
+                                    <label for="math">Mathematics</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="physics" name="subjects" value="physics">
+                                    <label for="physics">Physics</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="biology" name="subjects" value="biology">
+                                    <label for="biology">Biology</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="chemistry" name="subjects" value="chemistry">
+                                    <label for="chemistry">Chemistry</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="english" name="subjects" value="english">
+                                    <label for="english">English</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="portuguese" name="subjects" value="portuguese">
+                                    <label for="portuguese">Portuguese</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="spanish" name="subjects" value="spanish">
+                                    <label for="spanish">Spanish</label>
+                                </div>
+                                 <div class="checkbox-group">
+                                    <input type="checkbox" id="geography" name="subjects" value="geography">
+                                    <label for="geography">Geography</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="history" name="subjects" value="history">
+                                    <label for="history">History</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="computing" name="subjects" value="computing">
+                                    <label for="computing">Computing / ICT</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="igcsesubjects">IGCSE Subjects</label>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+                                 <div class="checkbox-group">
+                                    <input type="checkbox" id="coreMath" name="igcsesubjects" value="coreMath">
+                                    <label for="coreMath">Core Mathematics</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="extMath" name="igcsesubjects" value="extMath">
+                                    <label for="extMath">Extended Mathematics</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="addMath" name="igcsesubjects" value="addMath">
+                                    <label for="addMath">Additional Mathematics</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="coScience" name="igcsesubjects" value="coScience">
+                                    <label for="coScience">Core Combined Sciences</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="exScience" name="igcsesubjects" value="exScience">
+                                    <label for="exScience">Extended Combined Sciences</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseGeo" name="igcsesubjects" value="igcseGeo">
+                                    <label for="igcseGeo">IGCSE Geography</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseHis" name="igcsesubjects" value="igcseHis">
+                                    <label for="igcseHis">IGCSE History</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="GP" name="igcsesubjects" value="GP">
+                                    <label for="GP">Global Perspectives</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseEngfl" name="igcsesubjects" value="igcseEngfl">
+                                    <label for="igcseEngfl">IGCSE English</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseEngsl" name="igcsesubjects" value="igcseEngsl">
+                                    <label for="igcseEngsl">IGCSE English Second Lang</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcsePorfl" name="igcsesubjects" value="igcsePorfl">
+                                    <label for="igcsePorfl">IGCSE Portuguese</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcsePorsl" name="igcsesubjects" value="igcsePorsl">
+                                    <label for="igcsePorsl">IGCSE Portuguese Second Lang</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseSpafl" name="igcsesubjects" value="igcseSpafl">
+                                    <label for="igcseSpafl">IGCSE Spanish</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="igcseSpasl" name="igcsesubjects" value="igcseSpasl">
+                                    <label for="igcseSpasl">IGCSE Spanish Second Lang</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="CS" name="igcsesubjects" value="CS">
+                                    <label for="CS">IGCSE Computer Science</label>
+                                </div>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Other</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="sat" value="sat">
+                                <label for="sat">SAT</label>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group" id="SATscore" style="display: none;">
+                            <label for="SATscore">Your SAT Score</label>
+                            <input type="number" id="SATscoreInput" name="SATscore" placeholder="          /1600">
+                        </div>
+
+                       
+                         
+                        <div class="form-group">
+                            <label for="AboutMe">About Me (this will be seen on your profile) </label>
+                            <textarea id="AboutMe" name="AboutMe" placeholder="Introduce yourself to future students.
+You may include how you teach or any fun facts about yourself..." maxlength="200"></textarea>
+                        </div>
+                        <p id="CharLimit">Characters: 0/200</p>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1rem; color: #171717; border-bottom: 2px solid hsl(217, 91%, 60%); padding-bottom: 0.5rem;">Additional Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="certifications">Grade(s) achieved in the subject(s) and/or other awards gained</label>
+                            <textarea id="certifications" name="certifications" placeholder="Ex. 'A, Maths student of the year 2024'"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="availability">Availability*</label>
+                            <select id="availability" name="availability" required>
+                                <option value="" disabled selected>Select your availability</option>
+                                <option value="weekdays">Weekdays</option>
+                                <option value="weekends">Weekends</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+
+                        </div>
+
+                        <div style="display: block;">
+                            <input type="checkbox" id="onlineTeaching" name="onlineTeaching" value="online" required>
+                            <label for="onlineTeaching">I will be available for tutoring sessions whenever a student books one*</label><br><br>
+                            <input type="checkbox" id="inpersonTeaching" name="inpersonTeaching" value="inperson">
+                            <label for="inpersonTeaching">I am available for tutoring sessions in school during break and/or lunch time</label>
+                        </div>
+                    </div>
+
+                    <button value="submit" id="submit" type="submit" class="btn btn-primary btn-full" style="padding: 1rem; font-size: 1.125rem;">Create My Tutor Profile</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ClassroomTutors</h3>
+                    <p>Bridging the education gap through student-led tutoring and mentorship.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tutor-signup.html">Become a Tutor</a></li>
+                        <li><a href="student-booking.html">Find a Tutor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: classroomtutorshelp@gmail.com</li>
+                        <li>Phone: +55 11 97656-6451</li>
+                        <li><a href="contact.html#FAQ">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ClassroomTutors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyBk2IIybaj9KPO50X21bYwuJR6X9_uXZyQ",
+                authDomain: "bookatutor-e59a7.firebaseapp.com",
+                projectId: "bookatutor-e59a7",
+                storageBucket: "bookatutor-e59a7.firebasestorage.app",
+                messagingSenderId: "354092011723",
+                appId: "1:354092011723:web:a6405ab1a07d8dbb114b4e",
+                measurementId: "G-1SMJTMFTXQ"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getDatabase(app);
+
+            document.getElementById("submit").addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Collect fields
+                const firstName = document.getElementById("firstName").value.trim();
+                const lastName = document.getElementById("lastName").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const SATscore = document.getElementById("SATscoreInput").value.trim();
+                const aboutMe = document.getElementById("AboutMe").value.trim();
+                const certifications = document.getElementById("certifications").value.trim();
+                const availability = document.getElementById("availability").value.trim();
+
+                const subjectCheckboxes = document.querySelectorAll('input[name="subjects"]:checked');
+                const subjects = Array.from(subjectCheckboxes).map(cb => cb.value);
+
+                const igcsesubjectCheckboxes = document.querySelectorAll('input[name="igcsesubjects"]:checked');
+                const igcsesubjects = Array.from(igcsesubjectCheckboxes).map(cb => cb.value);
+
+                // ✅ Validation check
+                if (!firstName || !lastName || !email || !phone || subjects.length === 0) {
+                    alert("Please fill out all required fields.");
+                    return;
+                }
+
+                // Save to Firebase
+                set(ref(db, 'tutors/' + firstName), {
+                    firstname: firstName,
+                    lastname: lastName,
+                    email: email,
+                    phone: phone,
+                    subjects: subjects,
+                    igcsesubjects: igcsesubjects,
+                    SATscore: SATscore,
+                    AboutMe: aboutMe,
+                    certifications: certifications,
+                    availability: availability,
+                    onlineTeaching: document.getElementById("onlineTeaching").checked,
+                    inpersonTeaching: document.getElementById("inpersonTeaching").checked,
+                    SATtutoring: document.getElementById("sat").checked
+                }).then(() => {
+                    window.location.href = "postSignUp.html";
+                });
+            });
+        });
+    </script>
+    <script src="tutor-signup.js"></script>
+</body>
+</html>

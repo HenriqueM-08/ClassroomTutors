@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Tutor - ClassroomTutors</title>
+    <meta name="description" content="Browse and book qualified tutors for personalized learning sessions that fit your schedule.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="Logo.jpg" alt="ClassroomTutors Logo" style="width: 40px; height: 40px; border-radius: 20%;">
+                    </div>
+                    <span class="logo-text">ClassroomTutors</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="tutor-signup.html" class="nav-link">Become a Tutor</a>
+                    <a href="student-booking.html" class="nav-btn active">Book a Tutor</a>
+                    <a href="contact.html" class="nav-link">Contact & FAQ</a>
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Perfect Tutor</h1>
+                <p class="hero-subtitle">Browse our network of  tutors and book 30-minute lessons that fit your schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: #171717;">Search & Filter Tutors</h2>
+            <div class="filters">
+                <div class="form-group">
+                    <label for="subjectFilter">Subject</label>
+                    <select id="subjectFilter" name="subjectFilter">
+                        <option value="all">All Subjects</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="english">English</option>
+                        <option value="portuguese">Portuguese</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="geography">Geography</option>
+                        <option value="history">History</option>
+                        <option value="coreMath">IGCSE Core Maths</option>
+                        <option value="extMath">IGCSE Extended Maths</option>
+                        <option value="addMath">IGCSE Additional Maths</option>
+                        <option value="coScience">IGCSE Core Sciences</option>
+                        <option value="exScience">IGCSE Extended Sciences</option>
+                        <option value="igcseGeo">IGCSE Geography</option>
+                        <option value="igcseHis">IGCSE History</option>
+                        <option value="GP">IGCSE Global Perspectives</option>
+                        <option value="igcseEngfl">IGCSE English</option>
+                        <option value="igcseEngsl">IGCSE English as a Second Language</option>
+                        <option value="igcsePorfl">IGCSE Portuguese</option>
+                        <option value="igcsePorsl">IGCSE Portuguese as a Second Language</option>
+                        <option value="igcseSpafl">IGCSE Spanish</option>
+                        <option value="igcseSpasl">IGCSE Spanish as a Second Language</option>
+                        <option value="CS">IGCSE Computer Science</option>
+                        <option value="sat">SAT</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="availabilityFilter">Availability</label>
+                    <select id="availabilityFilter" name="availabilityFilter">
+                        <option value="all">Any Time</option>
+                        <option value="weekdays">Weekdays</option>
+                        <option value="weekends">Weekends</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="GradeFilter">Minimum IGCSE grade</label>
+                    <select id="GradeFilter" name="GradeFilter">
+                        <option value="all">Any Grade</option>
+                        <option value="A*">A* / 9-8</option>
+                        <option value="A">A / 7</option>
+                        <option value="B">B / 6-5</option>
+                        <option value="C">C / 4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nameSearch">Name Search</label>
+                    <input type="text" id="nameSearch" placeholder="Search tutor by name...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutors List -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem; color: #171717;">Available Tutors</h2>
+            
+            <div class="tutors-grid">
+                <!-- Nicholas Correa -->
+                <div class="tutor-card" data-subject="mathematics,biology,coScience,exScience" data-grade="A*" data-availability="weekdays">
+                    <div class="tutor-avatar">N</div>
+                    <h3>Nicolas Correa</h3>
+                    <p class="tutor-subject">Mathematics, IGCSE Biology</p>
+                    <div class="tutor-info">
+                        <p><strong>Grade Achieved: </strong>A*</p>
+                        <p><strong>Availability: </strong>Weekdays</p>
+                        <p><strong>About Me: </strong>I am a tutor!</p>
+                    </div>
+                    <button onclick="window.open('//LINK TO GOOGLE CALENDAR ', '_blank')" class=" btn btn-primary btn-full">Book Session</button>
+                </div>
+
+                <!-- Ranvir Verma -->
+                <div class="tutor-card" data-subject="chemistry,coreMath,extMath,mathematics" data-grade="A" data-availability="weekends">
+                    <div class="tutor-avatar">R</div>
+                    <h3>Ranvir Verma</h3>
+                    <p class="tutor-subject">Chemistry, IGCSE Extended Maths</p>
+                    <div class="tutor-info">
+                        <p><strong>Grade Achieved: </strong>A</p>
+                        <p><strong>Availability: </strong>Weekends</p>
+                        <p><strong>About Me: </strong>I am a tutor!</p>
+                    </div>
+                    <button class="btn btn-primary btn-full">Book Session</button>
+                </div>
+
+                <!-- Hugo Lanau -->
+                <div class="tutor-card" data-subject="physics,mathematics,english,igcseEngfl,igcseSpafl,spanish,coreMath,extMath,addMath,coScience,exScience," data-grade="A*" data-availability="flexible">
+                    <div class="tutor-avatar">H</div>
+                    <h3>Hugo Lanau</h3>
+                    <p class="tutor-subject">Physics, IGCSE Additional Maths, IGCSE English and Spanish</p>
+                    <div class="tutor-info">
+                        <p><strong>Grade Achieved: </strong>A*</p>
+                        <p><strong>Availability: </strong>Flexible</p>
+                        <p><strong>About Me: </strong>I am a tutor!</p>
+                    </div>
+                    <button class="btn btn-primary btn-full">Book Session</button>
+                </div>
+
+                <!-- Tutor 4 -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TutorConnect</h3>
+                    <p>Bridging the education gap through student-led tutoring and mentorship.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tutor-signup.html">Become a Tutor</a></li>
+                        <li><a href="student-booking.html">Find a Tutor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: classroomtutorshelp@gmail.com</li>
+                        <li>Phone: +55 11 97656-6451</li>
+                        <li><a href="contact.html#FAQ">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TutorConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="student-booking.js"></script>
+</body>
+</html>

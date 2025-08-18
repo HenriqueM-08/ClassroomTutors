@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const nameMatch = tutorName.includes(nameQuery);
 
         if (subjectMatch && gradeMatch && availabilityMatch && nameMatch) {
-            tutor.style.display = "block";
+            tutor.style.display = "flex";
         } else {
             tutor.style.display = "none";
         }
@@ -37,4 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
     gradeFilter.addEventListener("change", filterTutors);
     availabilityFilter.addEventListener("change", filterTutors);
     nameSearch.addEventListener("input", filterTutors);
+
 });

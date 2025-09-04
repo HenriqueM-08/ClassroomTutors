@@ -324,7 +324,7 @@ You may include how you teach or any fun facts about yourself..." maxlength="200
                 const igcsesubjects = Array.from(igcsesubjectCheckboxes).map(cb => cb.value);
 
                 // ✅ Validation check
-                if (!firstName || !lastName || !email || !phone || subjects.length === 0) {
+                if (!firstName || !lastName || !email || !phone) {
                     alert("Please fill out all required fields.");
                     return;
                 }
